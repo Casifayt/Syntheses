@@ -149,7 +149,7 @@ Avant d'énoncer le fameux théorème, revenons sur une définition importante :
 				
 	\item L'ensemble $S_b$\footnote{Sol. de l'EDLH} des fonctions solutions sur I de l'EDL est un translaté de $S_0$\footnote{Sol de l'EDLnH}. En bref : SGEnH = SPEnH + SGEH
 				
-	\item Tout problème de Cauchy relatif à une EDL régulière sur $I$ possède une et une sole solution sur $I$, notée $t \mapsto y(t;t_0, (y_{0,0}, \dots , y_{0,p-1}), b)$
+	\item Tout problème de Cauchy relatif à une EDL régulière sur $I$ possède une et une seule solution sur $I$, notée $t \mapsto y(t;t_0, (y_{0,0}, \dots , y_{0,p-1}), b)$
 	\end{enumerate}}\ \\
 Comment démontrer le 1. ? Il faut commencer par démontrer que l'opérateur linéaire $L : C^p \rightarrow C^0 = y \mapsto L(y) := a_0y^{(p)} + \dots + a_p y$ est une application linéaire. Pour se faire, démontrons la propriété : $L(\lambda y + \mu x) = \lambda L(y) + \mu L(x)$.
 		
@@ -989,7 +989,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 			\end{array}\right\}\ \Rightarrow \serie a_k\ \ \text{C.A.}
 		\end{equation}
 							
-		Le critère de Weiestrass n'est que l'extention du critère de comparaison, mais pour les séries de fonctions !
+		Le critère de Weiestrass n'est que l'extension du critère de comparaison, mais pour les séries de fonctions !
 		\begin{equation}
 			\left.\begin{array}{l}
 			\forall k : |f_k| \leq M_k\ (sur\ I)\\
@@ -999,7 +999,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 							
 							
 		\setcounter{subsection}{2}
-		\subsection{Critère d'Abel (pour la C.U. de séries de fonctions}
+		\subsection{Critère d'Abel (pour la C.U. de séries de fonctions)}
 		Rappelons  le critère d'Abel pour les séries numériques :
 		\begin{equation}
 			\left.\begin{array}{l}
@@ -1023,7 +1023,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 							
 							
 		\section{Limite uniforme d'une suite de fonctions continues}
-		Les sections suivantes (y compris celle-ci) sont consacrées aux qualités garanties par la convergence uniforme (d'une suite ou d'une série de fonctions). Mais avant tout , prouvons que la limite uniforme d'une suite de fonctions bornées est bornées.  
+		Les sections suivantes (y compris celle-ci) sont consacrées aux qualités garanties par la convergence uniforme (d'une suite ou d'une série de fonctions). Mais avant tout , prouvons que la limite uniforme d'une suite de fonctions bornées est bornée.
 		\setcounter{subsection}{-1}
 		\subsection{Fonction limite bornée}
 		\theor{Soit $\forall n \in \mathbb{N}_0, s_n : I \rightarrow \mathbb{R}$ une fonction bornée. Si $s_n \overset{C.U.}{\rightarrow} S$, alors $S$ est bornée.}
@@ -1074,7 +1074,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		\end{equation}
 							
 		\subsection{Dérivation}
-		On peut dériver terme à terme toute érie de fonctions de classe $C^1$ qui converge simplement et dont la série dérivée converge uniformément sur tout compact.\\
+		On peut dériver terme à terme toute série de fonctions de classe $C^1$ qui converge simplement et dont la série dérivée converge uniformément sur tout compact.\\
 		Si la série des dérivées C.U., alors sa somme est la dérivée de la somme.
 							
 		\section{Sommes de séries de puissances}
@@ -1115,7 +1115,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 				\item $S \in C^\infty$ et $S(x)= \series \dfrac{S^{(k)}(x_0)}{k!}(x-x_0)^k$, c'est à dire que $S(x)$ est la somme de la série de Taylor de $S$ autour de $x_0$ en tout point $x \in B(x_0,R)$.
 			\end{enumerate}}\ \\
 								
-		Ce théorème nous montre compte que l'on peut effectuer les dérivées terme à terme et qu'en faisant ceci, on se rend compte que notre fonction peut être identifiée à sa série de Taylor.\\
+		Ce théorème nous montre que l'on peut effectuer les dérivées terme à terme et qu'en faisant ceci, on se rend compte que notre fonction peut être identifiée à sa série de Taylor.\\
 		\textbf{Attention !} Ceci n'est vrai que dans le domaine de convergence !\ \\
 								
 		Une fonction $f \in C^\infty$ est \textbf{analytique} sur $A$ ssi\footnote{$\nu_{x_0}$ est un voisinage de $x_0$.} :
@@ -1159,16 +1159,16 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 				\lim\limits_{t \rightarrow t_0, t \in T_0} \int_D f(x,t) dx = \int_D \lim\limits_{t \rightarrow t_0, t \in T_0} = \int_D f(x,t_0)dx
 			\end{equation}
 			si :$\left\{\begin{array}{l}
-			D \text{est un compact mesurable}\\
-			T_0 \text{est un compact et $t_0 \in T_0$.}\\
-			f \text{est continue sur $D \times T_0$}
+			D \text{ est un compact mesurable}\\
+			T_0 \text{ est un compact et $t_0 \in T_0$.}\\
+			f \text{ est continue sur $D \times T_0$}
 			\end{array}\right.$
 			}\ \\
 								
 		\corollaire{Ce résultat est aussi valable si :\\
 			si :$\left\{\begin{array}{l}
-			D \text{est un compact mesurable et $t_0 \in\ $int$\ T  \subseteq\mathbb{R}$.}\\
-			f \text{est continue sur $D \times T$}
+			D \text{ est un compact mesurable et $t_0 \in\ $int$\ T  \subseteq\mathbb{R}$.}\\
+			f \text{ est continue sur $D \times T$}
 			\end{array}\right.$
 			}\ \\
 								
@@ -1187,15 +1187,15 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 				\frac{d}{dt}\int_D f(x,t) dx = \int_D \frac{\partial f}{\partial t}(x,t) dx
 			\end{equation}
 			si : $\left\{\begin{array}{l}
-			D \text{est un compact mesurable}\\
-			f\ et\ \frac{\partial f}{\partial t} \text{sont continues sur $D \times T$}
+			D \text{ est un compact mesurable}\\
+			f\ et\ \frac{\partial f}{\partial t} \text{ sont continues sur $D \times T$}
 			\end{array}\right.$}
 									
 		\subsection{Intégration sous le signe intégral}
 		En reprenant le même exemple que précédemment, on se rend compte que l'on ne peut permuter les intégrales. Cela semble contredire le \textit{théorème de Fubini} mais ce n'est pas le cas : en réalité l'intégrale double n'existe pas car on ne travaille pas sur un compact (on a exclu (0,0)). 
 									
 		\section{Intégrales sur un domaine variable}
-		Nous allons maintenant considéré le cas ou $f$ est indépendante de $t$, mais pas le domaine. Dans la suite, on considèrera que le "domaine grandit avec $t$" (et donc que le bord du domaine bouge).
+		Nous allons maintenant considérer le cas ou $f$ est indépendante de $t$, mais pas le domaine. Dans la suite, on considèrera que le "domaine grandit avec $t$" (et donc que le bord du domaine bouge).
 									
 		\subsection{Continuité par rapport au domaine d'intégration}
 		Supposons que $D_t$ est mesurable compact $\forall t \in T$ et qu'il croît lorsque $t$ augmente. Dans ce cas, nous avons :\\
@@ -1218,7 +1218,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 									
 									
 		\subsection{Règle de Leibniz en $2D$}
-		Si seul le domaine variée, la dérivée par rapport à $t$ de cette intégrale c'est la limite pour $\Delta t \rightarrow 0$ du quotient différentiel :
+		Si seul le domaine varie, la dérivée par rapport à $t$ de cette intégrale est la limite pour $\Delta t \rightarrow 0$ du quotient différentiel :
 		\begin{equation}
 			\frac{d}{dt} \iint_{D_t} f(x,y) dxdy = \lim\limits_{\Delta t \rightarrow 0} \dfrac{\iint_{t + \Delta D} f(x,y) dxdy - \iint_{D_t} f(x,y)dxdy}{\Delta t} =\  ?
 		\end{equation}
@@ -1292,7 +1292,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		Dans le deuxième cas, on "fixe" $f$ dans le temps et l'on utilise la formule de Leibniz lorsque seul le domaine varie et dans le troisième cas, seul $f$ dépend de $t$ : il suffit de dériver sous le signe intégrale.
 									
 		\subsection{Règle de Leibniz pour $\int_{D_t} f(x,t) dx$}
-		La borne supérieur et inférieur dépend de $t$ : la dérivée se calcule en tenant compte séparément de chaque cas :
+		Les bornes supérieure et inférieure dépendent de $t$ : la dérivée se calcule en tenant compte séparément de chaque cas :
 		\begin{equation}
 			\frac{d}{dt}\int_{\phi(t)}^{\psi(t)} f(x,t) =  \frac{d}{dt}\left[\int_c^{\psi(t)}f(x,t) - \int_c^{\phi(t)}f(x,t)\right]
 		\end{equation}
@@ -1330,14 +1330,14 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		Sinon il faudra orthogonaliser la base (Gram-Schmidt)
 									
 		\subsection{Dans un espace vectoriel muni d'un produit scalaire (espace préhilbertien)}
-		On défini un produit scalaire particulier pour Fourier :
+		On définit un produit scalaire particulier pour Fourier :
 		\begin{equation}
 			\left\{\begin{array}{l}
 			\text{Produit scalaire}\ \ \ \ \langle f,g \rangle := \int_a^b f.g\\
 			\text{Produit hermitien} \ \langle f,g \rangle := \int_a^b f.g^*
 			\end{array}\right.
 		\end{equation}
-		La norme sera quant à elle définir par : 
+		La norme sera quant à elle définie par : 
 		\begin{equation}
 			||f|| = \sqrt{\int_a^b |f|^2} = \sqrt{\langle f,f\rangle}
 		\end{equation}
@@ -1351,13 +1351,13 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 									
 		\retenir{Si $f$ a un pôle en $a^+$ mais $\left\{\begin{array}{l}
 			bornée\\
-			intérable\ sur\ tout\ [a,b]
+			intégrable\ sur\ tout\ [a,b]
 			\end{array}\right.$ alors
 											
 			\begin{equation}
 				\int_{a^+}^b |f|^2 < +\infty  \Rightarrow \int_{a^+}^b |f| < +\infty \Rightarrow \int_{a^+}^b f\ \text{converge}
 			\end{equation}}
-		$\langle , \rangle$ est bien définir sur $L^2$ (démonstration pas à connaître.)\\
+		$\langle , \rangle$ est bien défini sur $L^2$ (démonstration pas à connaître.)\\
 		Néanmoins, un point pose problème : $\langle f,f \rangle \geq 0 \Rightarrow f = 0$. Ceci n'est pas toujours vrai, si l'intégrale de $f^2$ est nulle cela n'implique pas que $f$ est toujours nulle\footnote{La fonction 1 si $x=0$ et 0 si $x\neq 0$ à une intégrale nulle mais n'est pas rigoureusement nulle}.\\
 									
 		On dira alors que $f$ vaut "presque partout zéro". $\langle f,f \rangle$ est un vrai produit scalaire sur $C^0([a,b])$ mais comme $C^0$ est trop restrictif on dira que $\langle f,f \rangle$ est "presque" un produit scalaire sur $L^2$ et on identifiera les fonctions comme "presque égales".
@@ -1366,7 +1366,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		Soit $\Phi =  \{\phi_j\ |\ j \in \mathbb{N}\}$ un ensemble dénombrable (dit \textit{système}) de fonction de $L^2([a,b], \mathbb{C})$.\\
 		$\Phi$ est un système
 		\begin{description}
-			\item[Libre] si toute parties finie de $\Phi$ est libre 
+			\item[Libre] si toute partie finie de $\Phi$ est libre 
 			\item[Orthogonal] si $j \neq k \rightarrow \langle \phi_j, \phi_k \rangle = 0$
 			\item[Orthonormé] si $\langle \phi_j, \phi_k \rangle = \delta_{ij}$
 		\end{description}
@@ -1380,7 +1380,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		où $p$ est une fonction poids.\\
 		$L^2$ devient ainsi un \textit{espace pré-hilbertien}. On définit $\Phi$ comme précédemment, c'est à dire un système orthogonal de vecteur de $L^2$. Attention, ce n'est pas forcément une base !! Il n'est pas forcément assez fourni\footnote{En effet, $L^2$ est infini non-dénombrable}.
 									
-		Par exemple si on prend un système simple comme les monômes : $\phi_k(x) = x^k (k =0,1,\dots)$. Si on considère l'EV engendré parles monômes on obtiendra l'ensemble des polynômes. Par contre, on considèrera les séries entières des sommes infinies.
+		Par exemple si on prend un système simple comme les monômes : $\phi_k(x) = x^k (k =0,1,\dots)$. Si on considère l'EV engendré par les monômes on obtiendra l'ensemble des polynômes. Par contre, on considèrera les séries entières des sommes infinies.
 									
 		\retenir{Soit $\Phi$ un système orthogonal dans $L^2([a,b])$. Soit $f \in L^2([a,b], \mathbb{K})$.\\
 			La série de Fourier de $f$ relativement à $\Phi$ est :
