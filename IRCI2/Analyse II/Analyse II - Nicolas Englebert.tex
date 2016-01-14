@@ -149,7 +149,7 @@ Avant d'énoncer le fameux théorème, revenons sur une définition importante :
 				
 	\item L'ensemble $S_b$\footnote{Sol. de l'EDLH} des fonctions solutions sur I de l'EDL est un translaté de $S_0$\footnote{Sol de l'EDLnH}. En bref : SGEnH = SPEnH + SGEH
 				
-	\item Tout problème de Cauchy relatif à une EDL régulière sur $I$ possède une et une sole solution sur $I$, notée $t \mapsto y(t;t_0, (y_{0,0}, \dots , y_{0,p-1}), b)$
+	\item Tout problème de Cauchy relatif à une EDL régulière sur $I$ possède une et une seule solution sur $I$, notée $t \mapsto y(t;t_0, (y_{0,0}, \dots , y_{0,p-1}), b)$
 	\end{enumerate}}\ \\
 Comment démontrer le 1. ? Il faut commencer par démontrer que l'opérateur linéaire $L : C^p \rightarrow C^0 = y \mapsto L(y) := a_0y^{(p)} + \dots + a_p y$ est une application linéaire. Pour se faire, démontrons la propriété : $L(\lambda y + \mu x) = \lambda L(y) + \mu L(x)$.
 		
@@ -162,7 +162,7 @@ Comment démontrer le 1. ? Il faut commencer par démontrer que l'opérateur lin
 		
 Ceci étant démontré, il faut maintenant démontrer que $S_0$ est de dimension $p$. Soit $t_0 \in I$ ("Evaluation de Cauchy" à l'instant $t_0$) et considérons l'application\footnote{Au vu de la C.I. de Cauchy (et du SDL associé à l'EDL) il est naturel d'associer la fonction vectorielle $\phi$} :
 \begin{equation}
-	\phi = S-0 \rightarrow \mathbb{K}^p : y \mapsto \left( \begin{array}{c}
+	\phi = S_0 \rightarrow \mathbb{K}^p : y \mapsto \left( \begin{array}{c}
 	y(t_0)\\
 	y'(t_0) \\
 	\vdots \\
@@ -188,13 +188,13 @@ A tout ensemble de $p$ fonctions de classes $C^p$, on peut associer une fonction
 	\end{array}\right|
 \end{equation}
 Voyons le théorème fondamental du Wronskien (EDLH d'ordre $p$ et régulière sur $I$): \\
-\theor{\ \\$y_1,\dots,y_p$ sont linéairement indépendant\\
+\theor{\ \\$y_1,\dots,y_p$ sont linéairement indépendants\\
 	$\Leftrightarrow W(y_1,\dots, y_p)$ ne s'annule pas sur $I$\\
-	$\Leftrightarrow W(y_1,\dots, y_p)$ n'est pas identiquement nulle sur $I$}\ \\
+	$\Leftrightarrow W(y_1,\dots, y_p)$ n'est pas identiquement nul sur $I$}\ \\
 		
 On peut ainsi dire que $W$ s'annule quelque part $\Leftrightarrow W$ est nul partout.\\
 		
-Plus fort encore (si si!) on l'\textbf{équation de Jacobi-Liouville} décrit l'équation du wronskien à travers le temps:
+Plus fort encore (si si!), l'\textbf{équation de Jacobi-Liouville} décrit l'équation du wronskien à travers le temps:
 \begin{equation}
 	W(t) = W(t_0)e^{-\int_{t_0}^t \frac{a_1}{a_0}}
 \end{equation}
@@ -224,7 +224,7 @@ Comme l'exponentielle est toujours positive, $W(t)$ et $W(t_0)$ ont le même sig
 	\tilde{y}'(t_0) := c_1y_1'(t_0)+\dots+c_py_p'(t_0)=0\\
 	\vdots\\
 	\tilde{y}^{(p-1)}(t_0) := c_1y_1^{(p-1)}(t_0)+\dots+c_py_p^{(p-1)}(t_0)=0
-	\end{array}\right.$ Donc $\tilde{y}$ est solution au problème de Cauchy $\tilde{y}(t_0)=\tilde{y}'(t_0)=\dots=\tilde{y}^{(p-1)}(t_0)=0$ (pour $(*)$). Or la solution triviale satisfait le même problème, d'où $\tilde{y}=0$ par unicité de la solution. Ceci signifie donc que $y_1,\dots,y_p$ sont linéairement dépendant
+	\end{array}\right.$ Donc $\tilde{y}$ est solution au problème de Cauchy $\tilde{y}(t_0)=\tilde{y}'(t_0)=\dots=\tilde{y}^{(p-1)}(t_0)=0$ (pour $(*)$). Or la solution triviale satisfait le même problème, d'où $\tilde{y}=0$ par unicité de la solution. Ceci signifie donc que $y_1,\dots,y_p$ sont linéairement dépendants.
 \end{proof}
 		
 		
@@ -323,7 +323,7 @@ Si l'on a une C.I. de Cauchy $y(0) = Y_0$ on peut écrire :
 \begin{equation}
 	\sum_{k=1}^m c_k e^0 V_k = Y_0
 \end{equation}
-On est dès lors ramené à un système dont la matrice est non-nulle car les vecteurs sont L.I $\rightarrow c_1, \dots,c_m$ sont univoquement déterminé et c'est d'ailleurs ce qui justifie l'unicité de la solution d'un problème de Cauchy !\\
+On est dès lors ramené à un système dont la matrice est non-nulle car les vecteurs sont L.I $\rightarrow c_1, \dots,c_m$ sont univoquement déterminés et c'est d'ailleurs ce qui justifie l'unicité de la solution d'un problème de Cauchy !\\
 		
 Si la C.I. est plutôt $Y(t_0) = Y_0$, la solution n'est qu'un translaté :
 \begin{equation}
@@ -356,16 +356,16 @@ Si les deux valeurs propres sont conjuguées, l'origine est un point spiral. Cec
 		
 \setcounter{section}{1}
 \section{Solution générale d'un SDL}
-Avant tout, un $SDL$ régulier est est un SDL pouvant être mis sous cette forme :
+Avant tout, un $SDL$ régulier est un SDL pouvant être mis sous cette forme :
 \begin{equation}
 	Y'(t) = A(t)Y(t) + B(t)
 \end{equation}
 où les coeff $a_{ij}$ de $A$ sont des fonctions continues sur le connexe $I\subseteq \mathbb{R}$.\\
 Un autre pré-requis important est le théorème d'existence et d'unicité :\\
 \theor{Pour un tel $SDL$, tout problème de Cauchy (avec C.I. $Y(t_0) = 0$ où $t_0 \in I$) admet \textbf{une et une seule solution} $t \mapsto Y(t)$ sur $I$}
-\subsection{L'espace vectoriel des solution d'un SDL$H$}
+\subsection{L'espace vectoriel des solutions d'un SDL$H$}
 Soit le SDLH : $Y' = A(t)Y$. Soit $S$ l'ensemble des solutions de ce EDLH de I dans $\mathbb{K}^m$. La linéarité de ce SD nous indique directement qu'il s'agit d'un espace vectoriel sur $\mathbb{K}$.\\
-Considérons l'application d'évaluation au temps $t_0$\footnote{Mes solutions sont des fonctions de $t$ et je l'évalue à $t_0$ : je regarde "ou on se trouve".}
+Considérons l'application d'évaluation au temps $t_0$\footnote{Mes solutions sont des fonctions de $t$ et je l'évalue à $t_0$ : je regarde "où on se trouve".}
 \begin{equation}
 	\phi_{t_0} : S \rightarrow \mathbb{K}^m : Y \rightarrow Y/_{t_0}
 \end{equation}
@@ -382,16 +382,16 @@ Une application linéaire bijective est un isomorphisme : on peut en conclure qu
 		
 Quand je prends un instantané je prends une section hyperplane et je regarde la valeur des courbes intégrales en celle-ci : si on fixe $t_0, y_0$, il passe une et une seule solution qui est une courbe intégrale.\\
 		
-\theor{L'ensemble des solution du SGH est un espace vectoriel de dimension $m$ et l'opérateur "évaluation des fonctions en $t=t_0$ est un isomorphisme d'espace vectoriel.}\ \\
+\theor{L'ensemble des solutions du SGH est un espace vectoriel de dimension $m$ et l'opérateur "évaluation des fonctions en $t=t_0$ est un isomorphisme d'espace vectoriel.}\ \\
 		
-\corollaire{Les $m$ solution $Y_1, \dots, Y_m$ sont linéairement indépendantes\\
-	$\Leftrightarrow$ Les vecteurs $Y_1/_{t_0}, \dots, Y_m/_{t_0}$ sont linéairement indépendante (valable $\forall t$ fixé)}
+\corollaire{Les $m$ solutions $Y_1, \dots, Y_m$ sont linéairement indépendantes\\
+	$\Leftrightarrow$ Les vecteurs $Y_1/_{t_0}, \dots, Y_m/_{t_0}$ sont linéairement indépendants (valable $\forall t$ fixé)}
 		
 \subsection{L'espace affin des solutions d'un SDLnH}
-Pour faire simple, on peut dire que $SGSnH = SGSH +\ une\ SPSnH$. Il suffit de prendre une solution particulières (peut importe laquelle) et de l'additionner à la solution générale du système différentiel homogène.
+Pour faire simple, on peut dire que $SGSnH = SGSH +\ une\ SPSnH$. Il suffit de prendre une solution particulière (peu importe laquelle) et de l'additionner à la solution générale du système différentiel homogène.
 		
 \subsection{Système fondamental}
-Un système \textbf{fondamental} de solutions du SDLH $Y'(t) = A(t)y(t)$ où $A \in M_m(\mathbb{K})$ est un ensemble de solution formant une base de l'espace $S$ des solutions, autrement dit c'est un ensemble de $m$ solutions linéairement indépendantes.\\
+Un système \textbf{fondamental} de solutions du SDLH $Y'(t) = A(t)y(t)$ où $A \in M_m(\mathbb{K})$ est un ensemble de solutions formant une base de l'espace $S$ des solutions, autrement dit c'est un ensemble de $m$ solutions linéairement indépendantes.\\
 \textbf{Inclure slide 31  + la proposition}
 		
 \subsection{Wronskien et Jacobi-Liouville pour SDL}
@@ -420,7 +420,7 @@ Par le théorème d'existence et unicité du problème de Cauchy, on peut en dé
 		
 \subsection{Orbites et espace des phases}
 On dira que $(y_1(t), y_2(t)) :=$ la \textit{phase} à l'instant $t$ ou encore la \textit{position} dans le plan $oy_1y_2$.\\
-La phase représente ainsi chacun des états successifs d'un phénomène en évolution. Si le mouvement est circulaires, notons que le graphe de $Y$ sera une hélice.
+La phase représente ainsi chacun des états successifs d'un phénomène en évolution. Si le mouvement est circulaire, notons que le graphe de $Y$ sera une hélice.
 		
 \subsection{SD autonomes}
 On le sait maintenant, un système différentiel est :
@@ -449,20 +449,20 @@ Deux cas particuliers importants :
 \chapter{Séries numériques}
 \section{Séries numériques : convergence et C.A.}
 \subsection{Introduction}
-Une séries est une somme contenant une infinité de termes. On appelle \textbf{série numérique} une expression du type :
+Une série est une somme contenant une infinité de termes. On appelle \textbf{série numérique} une expression du type :
 \begin{equation}
 	a_1 + a_2 + a_3 + \dots = \sum_{k=1}^\infty a_k\ \ \ \ \ \ où\ \ \forall k : a_k \in \mathbb{C}
 \end{equation}
 		
 \subsection{Suites arithmétiques et géométriques}
 \subsubsection{Série arithmétique}
-Une suite arithmétique est une suite $(s_k)_{k \geq 0}$ tel qu'il existe $a, a_0 \in \mathbb{C}$ tels que $s_k = ak + a_0\ \ \forall k \in \mathbb{N}_0$.\\
+Une suite arithmétique est une suite $(s_k)_{k \geq 0}$ tel qu'il existe $a, a_0 \in \mathbb{C}$ tels que $s_k = a_k + a_0\ \ \forall k \in \mathbb{N}_0$.\\
 On lui associe facilement la série $a_0 + a + a + a + \dots = \sum_{k=0}^\infty a_k$ dont  le \textbf{terme général est constant} (ou presque) : $a_k = a$.
 Cette série diverge ($+\infty$)
 		
 \subsubsection{Série géométrique}
 On définit d'abord une suite $u_0 = u_0, u_1 = u_0\rho, u_2 = u_0\rho^2,\dots, u_3 = u_0\rho^k$. On peut lui associer la série $\sum_{k=0}^\infty u_0\rho^k$.\\
-Si la raison ($\rho$) $\geq 0$, la série divergera si $\rho > 1$, convergera vers $u_0$ si $\rho = 1$ et vers $0$ si $\rho < 1$.
+Si la raison ($\rho$) $\geq 0$, la série divergera pour $\rho > 1$, convergera vers $u_0$ si $\rho = 1$ et vers $0$ si $\rho < 1$.
 		
 \subsubsection{Série harmoniques}
 La première série (non trivialement divergente) dont on a montré rigoureusement la divergence est :
@@ -515,13 +515,13 @@ Une nouvelle définition spécifique aux séries est nécessaire. On dira que la
 		
 \proposition{Une condition suffisante pour que $\sum_{k=1}^\infty a_k$ converge est que $\sum_{k=1}^\infty a_k$ converge absolument}\ \\
 		
-Ce qui peut se résumer à : convergence absolue $\Rightarrow$ convergence\footnote{La réciproque est fausse : considérer la "série harmonique alternée" : $\sum_{k=1}^\infty a_k \frac{(1-)^k}{k}$}. $$\sum_1^{\infty}|a_k|\ conv\Rightarrow \sum_1^{\infty}a_k\ conv$$
+Ce qui peut se résumer à : convergence absolue $\Rightarrow$ convergence\footnote{La réciproque est fausse : considérer la "série harmonique alternée" : $\sum_{k=1}^\infty a_k \frac{(-1)^k}{k}$}. $$\sum_1^{\infty}|a_k|\ conv\Rightarrow \sum_1^{\infty}a_k\ conv$$
 \begin{proof}
 	\ \\
 	Il faut traduire la convergence dans le langage de Cauchy (Application du critère de Cauchy) et y appliquer l'inégalité triangulaire : $\sum_{k=1}^\infty |a_k|$ converge :
 	\begin{eqnarray}
 		&\Leftrightarrow & \forall \epsilon > 0, \exists K > 0 : \forall k \geq K, \forall l \geq 1 : \left|\sum_{i=k}^{k+l} |a_i| \right| < \epsilon\\
-		&\Rightarrow & forall \epsilon > 0, \exists K > 0 : \forall k \geq K, \forall l \geq 1 : \left|\sum_{i=k}^{k+l} a_i \right| < \epsilon\\
+		&\Rightarrow & \forall \epsilon > 0, \exists K > 0 : \forall k \geq K, \forall l \geq 1 : \left|\sum_{i=k}^{k+l} a_i \right| < \epsilon\\
 		&\Leftrightarrow & \sum_{k=1}^\infty a_k\ \ \text{converge}
 	\end{eqnarray}
 \end{proof}
@@ -605,7 +605,7 @@ Le \textbf{critère intégral de Cauchy} s'énonce :\\
 	\begin{equation}
 		\exists M \in \mathbb{R}, \forall n : \sum_{k=1}^n b_k < M
 	\end{equation}
-	Ceci étant supérieure à l'expression suivante :
+	Ceci étant supérieur à l'expression suivante :
 	\begin{equation}
 		\exists M \in \mathbb{R}, \forall n : \sum_{k=1}^n |a_k| < M
 	\end{equation}
@@ -613,7 +613,7 @@ Le \textbf{critère intégral de Cauchy} s'énonce :\\
 \end{proof}
 			
 \subsection{Critère d'équivalence}
-\proposition{Supposons qu'il $\exists K : \forall k \geq K : a_k \geq 0, b_k > 0$ et que la limite suivant existe au sens large : $\lim\limits_{k \rightarrow \infty} \dfrac{a_k}{b_k} =: l \in \overline{\mathbb{R}^+}$.\\
+\proposition{Supposons qu'il $\exists K : \forall k \geq K : a_k \geq 0, b_k > 0$ et que la limite suivante existe au sens large : $\lim\limits_{k \rightarrow \infty} \dfrac{a_k}{b_k} =: l \in \overline{\mathbb{R}^+}$.\\
 	Distinguons les cas suivants :
 	\begin{enumerate}
 		\item Si $0 < l < +\infty$ : $\serie a_k\ \text{converge} \Leftrightarrow\ \serie b_k\ \text{converge}$
@@ -674,14 +674,14 @@ L'implication est bien $b_k$ décroissant $\Rightarrow$ la convergence mais la r
 \end{equation}
 Cela signifie que la valeur absolue de l'erreur de troncature d'une série alternée amortie est majorée par la valeur absolue du premier terme.
 \begin{proof}\ \\
-	Comme $(s_{2n})\searrow s\ \ (0\leq s_{2n}-s\Rightarrow s\leq s_{2n})$ et $(s_{2n+1})\nearrow s\ \ (-s\leq -s_{2n+1}\Rightarrow s-s{2n+1}\geq0)$, on peut dire que :$$\left\{\begin{array}{l}
+	Comme $(s_{2n})\searrow s\ \ (0\leq s_{2n}-s\Rightarrow s\leq s_{2n})$ et $(s_{2n+1})\nearrow s\ \ (-s\leq -s_{2n+1}\Rightarrow s-s_{2n+1}\geq0)$, on peut dire que :$$\left\{\begin{array}{l}
 	0\leq s_{2n}-s\leq s_{2n}-s_{2n+1}=b_{2n+1} \\
 	0\leq s-s_{2n+1}\leq s_{2n+2}-s_{2n+1} = b_{2n+2}
 	\end{array}\right.\Rightarrow |s-s_n|\leq b_{n+1}$$
 \end{proof}
 \setcounter{subsection}{5}
 \subsection{Critère d'Abel}
-Le critère d'Abel nous informe que si $b_k$ tend vers zéro et que l'ensemble des sommes partielles est bonré ($|\sum_{k=0}^n \epsilon_k | \leq M$) alors la série $\serie \epsilon_kb_k$ converge.
+Le critère d'Abel nous informe que si $b_k$ tend vers zéro et que l'ensemble des sommes partielles est borné ($|\sum_{k=0}^n \epsilon_k | \leq M$) alors la série $\serie \epsilon_kb_k$ converge.
 \begin{equation}
 	\left.\begin{array}{l}
 	a_k \searrow0\\
@@ -695,7 +695,7 @@ C'est une condition suffisante, mais non nécessaire. Ce critère est particuli�
 Petite propriété sympa (bien qu'un peu simple) ! Elle dit que si $\serie a_k$ \textbf{converge}, l'introduction de parenthèses ne change rien à la convergence de la série.
 					
 					
-\subsection{Permutation de termes d'une série à terme $\geq 0$}
+\subsection{Permutation de termes d'une série à termes $\geq 0$}
 On ne modifie ni la convergence ni la somme d'une série à termes positifs en modifiant l'ordre de ses termes.\\
 Si $\pi$ est une permutation dans $\mathbb{N}_0$ alors :
 \begin{equation}
@@ -734,7 +734,7 @@ Le tableau ci-contre reprend la semi-convergence (car pas de C.A.) de $\serie a_
 \subsection{Désordre chaotique de la semi-convergence}
 \proposition{Soit $\sigma \in \vec{\mathbb{R}}$. Si $\serie a_k$ est une série réelle semi-convergente, alors il existe une permutation $\pi$ de $\mathbb{N}_0$ telle que $\serie a_{\pi(k)} = \sigma$.}\ \\
 					
-On en conclut que si une série converge absolument, on peut permuter les termes sans risque. Par contre, en cas de semi-convergence (converge mais pas absolument) la "sous-série positive" (et négative) ne sont pas bornées : On peut arranger les termes pour obtenir n'importe quoi !!!
+On en conclut que si une série converge absolument, on peut permuter les termes sans risque. Par contre, en cas de semi-convergence (converge mais pas absolument) les "sous-séries" positive (et négative) ne sont pas bornées : On peut arranger les termes pour obtenir n'importe quoi !!!
 					
 					
 \section{Produits de deux séries}
@@ -763,7 +763,7 @@ Par \textbf{définition}\footnote{Le slide 46 et la page 50 donne la motivation 
 \end{equation}
 					
 \subsection{De la convergence du produit de Cauchy}
-Le produit de Cauchy de deux série ne converge pas nécessairement même si les deux séries initiales l'étaient toutes deux.\\
+Le produit de Cauchy de deux séries ne converge pas nécessairement même si les deux séries initiales l'étaient toutes deux.\\
 					
 Heureusement, nous savons que si deux séries convergent absolument, alors leur produit de Cauchy converge. Le théorème suivant (\textbf{Cauchy-Mertens}), que nous admettrons, généralise ce fait :\\
 					
@@ -896,7 +896,7 @@ La série du binôme pour $r=-1$ nous permet d'écrire que $\frac{1}{1+t}=1-t+t^
 \chapter{Séries de fonctions}
 \section{Les surprises de la convergence simple}
 \subsection{Introduction}
-Certaines propriétés valable pour les sommes finies de fonctions ne sont pas valables pour les séries, comme par exemple le passage à la limite sur la variable $x$, l'intégration et la dérivation. C'est ce que l'on va montrer dans le présent chapitre.
+Certaines propriétés valables pour les sommes finies de fonctions ne sont pas valables pour les séries, comme par exemple le passage à la limite sur la variable $x$, l'intégration et la dérivation. C'est ce que l'on va montrer dans le présent chapitre.
 					
 \subsection{Problème de continuité}
 Prenons la suite de fonction $s_k(x) = \left\{\begin{array}{l}
@@ -985,15 +985,15 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		\begin{equation}
 			\left.\begin{array}{l}
 			\forall k : |a_k| \leq M\\
-			\serie M_k\ \ \text{converve}
+			\serie M_k\ \ \text{converge}
 			\end{array}\right\}\ \Rightarrow \serie a_k\ \ \text{C.A.}
 		\end{equation}
 							
-		Le critère de Weiestrass n'est que l'extention du critère de comparaison, mais pour les séries de fonctions !
+		Le critère de Weiestrass n'est que l'extension du critère de comparaison, mais pour les séries de fonctions !
 		\begin{equation}
 			\left.\begin{array}{l}
 			\forall k : |f_k| \leq M_k\ (sur\ I)\\
-			\serie M_k\ \ \text{converve}
+			\serie M_k\ \ \text{converge}
 			\end{array}\right\}\ \Rightarrow \serie f_k\ \ \text{C.N. sur I}
 		\end{equation}
 							
@@ -1023,7 +1023,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 							
 							
 		\section{Limite uniforme d'une suite de fonctions continues}
-		Les sections suivantes (y compris celle-ci) sont consacrées aux qualités garanties par la convergence uniforme (d'une suite ou d'une série de fonctions). Mais avant tout , prouvons que la limite uniforme d'une suite de fonctions bornées est bornées.  
+		Les sections suivantes (y compris celle-ci) sont consacrées aux qualités garanties par la convergence uniforme (d'une suite ou d'une série de fonctions). Mais avant tout , prouvons que la limite uniforme d'une suite de fonctions bornées est bornée.  
 		\setcounter{subsection}{-1}
 		\subsection{Fonction limite bornée}
 		\theor{Soit $\forall n \in \mathbb{N}_0, s_n : I \rightarrow \mathbb{R}$ une fonction bornée. Si $s_n \overset{C.U.}{\rightarrow} S$, alors $S$ est bornée.}
@@ -1074,7 +1074,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		\end{equation}
 							
 		\subsection{Dérivation}
-		On peut dériver terme à terme toute érie de fonctions de classe $C^1$ qui converge simplement et dont la série dérivée converge uniformément sur tout compact.\\
+		On peut dériver terme à terme toute série de fonctions de classe $C^1$ qui converge simplement et dont la série dérivée converge uniformément sur tout compact.\\
 		Si la série des dérivées C.U., alors sa somme est la dérivée de la somme.
 							
 		\section{Sommes de séries de puissances}
@@ -1115,7 +1115,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 				\item $S \in C^\infty$ et $S(x)= \series \dfrac{S^{(k)}(x_0)}{k!}(x-x_0)^k$, c'est à dire que $S(x)$ est la somme de la série de Taylor de $S$ autour de $x_0$ en tout point $x \in B(x_0,R)$.
 			\end{enumerate}}\ \\
 								
-		Ce théorème nous montre compte que l'on peut effectuer les dérivées terme à terme et qu'en faisant ceci, on se rend compte que notre fonction peut être identifiée à sa série de Taylor.\\
+		Ce théorème nous montre que l'on peut effectuer les dérivées terme à terme et qu'en faisant ceci, on se rend compte que notre fonction peut être identifiée à sa série de Taylor.\\
 		\textbf{Attention !} Ceci n'est vrai que dans le domaine de convergence !\ \\
 								
 		Une fonction $f \in C^\infty$ est \textbf{analytique} sur $A$ ssi\footnote{$\nu_{x_0}$ est un voisinage de $x_0$.} :
@@ -1124,7 +1124,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		\end{equation}
 		Comme contre-exemple, on peut prendre la fonction $f : x \rightarrow e^{-1/x^2}$ si $x \neq 0$. Dans ce cas la, le développement autour de 0 donne également 0 ($\forall x \neq 0$), ce qui est bien différent de $e^{-1/x^2}$.\\
 								
-		Des fonctions comme sin, cos sont par exemple analytique. La convergence est dès lors uniforme sur tout compact et absolue sur $\mathbb{R}$.
+		Des fonctions comme sin, cos sont par exemple analytiques. La convergence est dès lors uniforme sur tout compact et absolue sur $\mathbb{R}$.
 		\chapter{Intégrales généralisées, dérivations d'intégrales}
 		\setcounter{section}{-1}
 		\section{Introduction}
@@ -1156,19 +1156,19 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		Pour passer la limite sous le signe intégral, il faut que $f$ soit \textbf{continue sur un compact}\footnote{Un compact est un ensemble fermé et borné. Une fonction sur un compact atteint ses bornes et est uniformément continue.}.
 		\theor{
 			\begin{equation}
-				\lim\limits_{t \rightarrow t_0, t \in T_0} \int_D f(x,t) dx = \int_D \lim\limits_{t \rightarrow t_0, t \in T_0} = \int_D f(x,t_0)dx
+				\lim\limits_{t \rightarrow t_0, t \in T_0} \int_D f(x,t) dx = \int_D \lim\limits_{t \rightarrow t_0, t \in T_0} f(x,t) dx = \int_D f(x,t_0)dx
 			\end{equation}
 			si :$\left\{\begin{array}{l}
-			D \text{est un compact mesurable}\\
-			T_0 \text{est un compact et $t_0 \in T_0$.}\\
-			f \text{est continue sur $D \times T_0$}
+			D ~\text{est un compact mesurable}\\
+			T_0 ~\text{est un compact et $t_0 \in T_0$.}\\
+			f ~\text{est continue sur $D \times T_0$}
 			\end{array}\right.$
 			}\ \\
 								
 		\corollaire{Ce résultat est aussi valable si :\\
 			si :$\left\{\begin{array}{l}
-			D \text{est un compact mesurable et $t_0 \in\ $int$\ T  \subseteq\mathbb{R}$.}\\
-			f \text{est continue sur $D \times T$}
+			D ~\text{est un compact mesurable et $t_0 \in\ $int$\ T  \subseteq\mathbb{R}$.}\\
+			f ~\text{est continue sur $D \times T$}
 			\end{array}\right.$
 			}\ \\
 								
@@ -1187,7 +1187,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 				\frac{d}{dt}\int_D f(x,t) dx = \int_D \frac{\partial f}{\partial t}(x,t) dx
 			\end{equation}
 			si : $\left\{\begin{array}{l}
-			D \text{est un compact mesurable}\\
+			D ~\text{est un compact mesurable}\\
 			f\ et\ \frac{\partial f}{\partial t} \text{sont continues sur $D \times T$}
 			\end{array}\right.$}
 									
@@ -1195,7 +1195,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		En reprenant le même exemple que précédemment, on se rend compte que l'on ne peut permuter les intégrales. Cela semble contredire le \textit{théorème de Fubini} mais ce n'est pas le cas : en réalité l'intégrale double n'existe pas car on ne travaille pas sur un compact (on a exclu (0,0)). 
 									
 		\section{Intégrales sur un domaine variable}
-		Nous allons maintenant considéré le cas ou $f$ est indépendante de $t$, mais pas le domaine. Dans la suite, on considèrera que le "domaine grandit avec $t$" (et donc que le bord du domaine bouge).
+		Nous allons maintenant considérer le cas ou $f$ est indépendante de $t$, mais pas le domaine. Dans la suite, on considèrera que le "domaine grandit avec $t$" (et donc que le bord du domaine bouge).
 									
 		\subsection{Continuité par rapport au domaine d'intégration}
 		Supposons que $D_t$ est mesurable compact $\forall t \in T$ et qu'il croît lorsque $t$ augmente. Dans ce cas, nous avons :\\
@@ -1218,7 +1218,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 									
 									
 		\subsection{Règle de Leibniz en $2D$}
-		Si seul le domaine variée, la dérivée par rapport à $t$ de cette intégrale c'est la limite pour $\Delta t \rightarrow 0$ du quotient différentiel :
+		Si seul le domaine varie, la dérivée par rapport à $t$ de cette intégrale est la limite pour $\Delta t \rightarrow 0$ du quotient différentiel :
 		\begin{equation}
 			\frac{d}{dt} \iint_{D_t} f(x,y) dxdy = \lim\limits_{\Delta t \rightarrow 0} \dfrac{\iint_{t + \Delta D} f(x,y) dxdy - \iint_{D_t} f(x,y)dxdy}{\Delta t} =\  ?
 		\end{equation}
@@ -1229,7 +1229,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		Supposons qu'on connaisse en chaque point la vitesse de variation du domaine. On va approcher l'aire de la couronne par la somme d'aire de petits pavés à l'aide d'une ligne polygonale. \\
 									
 		Je nomme $\Delta s_i$ la longueur d'une telle arrête de ma ligne et la vitesse de la frontière du domaine progresse à vitesse $v$.\\
-		La progression sur le temps $\Delta t$ sera dès lors $v.\Delta t$. Comme j'approche $f$, je dois chaque fois le multiplier par les approximations d'aires\footnote{Je note $\vec{x} = (x,y)$ et $d\vec{x} = dxdy$.} :
+		La progression sur le temps $\Delta t$ sera dès lors $v\Delta t$. Comme j'approche $f$, je dois chaque fois le multiplier par les approximations d'aires\footnote{Je note $\vec{x} = (x,y)$ et $d\vec{x} = dxdy$.} :
 		\begin{equation}
 			\dfrac{\iint_{\Delta D} f(\vec{x})d\vec{x}}{\Delta t} \approx \sum_i f|_{\vec{x_i}}v|_{\vec{x_i}}\Delta s_i \ \ \ \ \rightarrow \oint_{\partial D_{t_0}}fv\ ds
 		\end{equation}
@@ -1292,7 +1292,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		Dans le deuxième cas, on "fixe" $f$ dans le temps et l'on utilise la formule de Leibniz lorsque seul le domaine varie et dans le troisième cas, seul $f$ dépend de $t$ : il suffit de dériver sous le signe intégrale.
 									
 		\subsection{Règle de Leibniz pour $\int_{D_t} f(x,t) dx$}
-		La borne supérieur et inférieur dépend de $t$ : la dérivée se calcule en tenant compte séparément de chaque cas :
+		La borne supérieure et inférieure dépendent de $t$ : la dérivée se calcule en tenant compte séparément de chaque cas :
 		\begin{equation}
 			\frac{d}{dt}\int_{\phi(t)}^{\psi(t)} f(x,t) =  \frac{d}{dt}\left[\int_c^{\psi(t)}f(x,t) - \int_c^{\phi(t)}f(x,t)\right]
 		\end{equation}
@@ -1327,17 +1327,17 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		\begin{itemize}
 			\item $V$ est muni du produit scalaire dans lequel $(\vec{e_k})$ est orthonormée
 		\end{itemize}
-		Sinon il faudra orthogonaliser la base (Gram-Schmidt)
+		Sinon il faudra orthogonaliser la base (Gram-Schmidt).
 									
 		\subsection{Dans un espace vectoriel muni d'un produit scalaire (espace préhilbertien)}
-		On défini un produit scalaire particulier pour Fourier :
+		On définit un produit scalaire particulier pour Fourier :
 		\begin{equation}
 			\left\{\begin{array}{l}
 			\text{Produit scalaire}\ \ \ \ \langle f,g \rangle := \int_a^b f.g\\
 			\text{Produit hermitien} \ \langle f,g \rangle := \int_a^b f.g^*
 			\end{array}\right.
 		\end{equation}
-		La norme sera quant à elle définir par : 
+		La norme sera quant à elle définie par : 
 		\begin{equation}
 			||f|| = \sqrt{\int_a^b |f|^2} = \sqrt{\langle f,f\rangle}
 		\end{equation}
@@ -1347,26 +1347,26 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 			\int_a^b |f|^2 < +\infty
 		\end{equation}
 		Cette appellation vient du fait que \textit{l'intégralité de $f^2$ entraine l'intégrabilité de $f$ sur $[a,b]$} ce qui est vrai en considérant l'intégrale de Lebesgue.\\
-		Ceci est aussi vrai si la fonction est localement intégrable sauf en un nombre fini de pôles\\
+		Ceci est aussi vrai si la fonction est localement intégrable sauf en un nombre fini de pôles.\\
 									
 		\retenir{Si $f$ a un pôle en $a^+$ mais $\left\{\begin{array}{l}
 			bornée\\
-			intérable\ sur\ tout\ [a,b]
+			intégrable\ sur\ tout\ [a,b]
 			\end{array}\right.$ alors
 											
 			\begin{equation}
 				\int_{a^+}^b |f|^2 < +\infty  \Rightarrow \int_{a^+}^b |f| < +\infty \Rightarrow \int_{a^+}^b f\ \text{converge}
 			\end{equation}}
-		$\langle , \rangle$ est bien définir sur $L^2$ (démonstration pas à connaître.)\\
+		$\langle , \rangle$ est bien défini sur $L^2$ (démonstration pas à connaître.)\\
 		Néanmoins, un point pose problème : $\langle f,f \rangle \geq 0 \Rightarrow f = 0$. Ceci n'est pas toujours vrai, si l'intégrale de $f^2$ est nulle cela n'implique pas que $f$ est toujours nulle\footnote{La fonction 1 si $x=0$ et 0 si $x\neq 0$ à une intégrale nulle mais n'est pas rigoureusement nulle}.\\
 									
 		On dira alors que $f$ vaut "presque partout zéro". $\langle f,f \rangle$ est un vrai produit scalaire sur $C^0([a,b])$ mais comme $C^0$ est trop restrictif on dira que $\langle f,f \rangle$ est "presque" un produit scalaire sur $L^2$ et on identifiera les fonctions comme "presque égales".
 		\setcounter{subsection}{4}
 		\subsection{Systèmes libres, orthogonaux, orthonormés}
-		Soit $\Phi =  \{\phi_j\ |\ j \in \mathbb{N}\}$ un ensemble dénombrable (dit \textit{système}) de fonction de $L^2([a,b], \mathbb{C})$.\\
+		Soit $\Phi =  \{\phi_j\ |\ j \in \mathbb{N}\}$ un ensemble dénombrable (dit \textit{système}) de fonctions de $L^2([a,b], \mathbb{C})$.\\
 		$\Phi$ est un système
 		\begin{description}
-			\item[Libre] si toute parties finie de $\Phi$ est libre 
+			\item[Libre] si toute partie finie de $\Phi$ est libre 
 			\item[Orthogonal] si $j \neq k \rightarrow \langle \phi_j, \phi_k \rangle = 0$
 			\item[Orthonormé] si $\langle \phi_j, \phi_k \rangle = \delta_{ij}$
 		\end{description}
@@ -1378,9 +1378,9 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 			\langle f,g \rangle_p = \int_a^b fg^*p
 		\end{equation}
 		où $p$ est une fonction poids.\\
-		$L^2$ devient ainsi un \textit{espace pré-hilbertien}. On définit $\Phi$ comme précédemment, c'est à dire un système orthogonal de vecteur de $L^2$. Attention, ce n'est pas forcément une base !! Il n'est pas forcément assez fourni\footnote{En effet, $L^2$ est infini non-dénombrable}.
+		$L^2$ devient ainsi un \textit{espace pré-hilbertien}. On définit $\Phi$ comme précédemment, c'est à dire un système orthogonal de vecteurs de $L^2$. Attention, ce n'est pas forcément une base !! Il n'est pas forcément assez fourni\footnote{En effet, $L^2$ est infini non-dénombrable}.
 									
-		Par exemple si on prend un système simple comme les monômes : $\phi_k(x) = x^k (k =0,1,\dots)$. Si on considère l'EV engendré parles monômes on obtiendra l'ensemble des polynômes. Par contre, on considèrera les séries entières des sommes infinies.
+		Par exemple si on prend un système simple comme les monômes : $\phi_k(x) = x^k (k =0,1,\dots)$. Si on considère l'EV engendré par les monômes on obtiendra l'ensemble des polynômes. Par contre, on considèrera les séries entières des sommes infinies.
 									
 		\retenir{Soit $\Phi$ un système orthogonal dans $L^2([a,b])$. Soit $f \in L^2([a,b], \mathbb{K})$.\\
 			La série de Fourier de $f$ relativement à $\Phi$ est :
@@ -1434,7 +1434,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 									
 		\section{Coefficients des séries de Fourier classiques}
 		\subsection{Série sinus et cosinus sur $L^2([-\frac{T}{2}, \frac{T}{2}], \mathbb{R})$}
-		Comme la période est $2/\pi$ on peut travailler sur tout  intervalle de cette taille. Comma la période est $T$, autant la centrer sur l'origine.
+		Comme la période est $2/\pi$ on peut travailler sur tout  intervalle de cette taille. Comme la période est $T$, autant la centrer sur l'origine.
 		\begin{equation}
 			\Phi = \left\{ \frac{1}{2}, \cos\left(\frac{2k\pi}{T}x\right), \sin\left(\frac{2k\pi}{T}x\right) ; k \in \mathbb{N}_0\right\}
 		\end{equation}
@@ -1538,7 +1538,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 									
 									
 		\subsubsection*{Unicité de la décomposition}
-		Si la fonction $f = 0$ c'est parce que $f$ est orthogonale à tous le s$\phi_k$, donc tous les $c_k$ seront nuls. Par Parseval, la norme de $f$ devrait être nulle, mais on sait que $f$ ne sera réellement null que si $f$ est continue.\\
+		Si la fonction $f = 0$ c'est parce que $f$ est orthogonale à tous les $\phi_k$, donc tous les $c_k$ seront nuls. Par Parseval, la norme de $f$ devrait être nulle, mais on sait que $f$ ne sera réellement null que si $f$ est continue.\\
 									
 		\retenir{Dans un système orthogonal $\Phi$ complet sur $L^2([a,b])$, si $f \in L^2$ est tel que $f \perp \phi_k \forall k \in \mathbb{N}_0$, alors $||f||=0$. Si  de plus $f\in C^0$, alors $f=0$ sur $[a,b]$.}\ \\
 									
@@ -1553,7 +1553,7 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		Cela signifie que les coefficients de Fourier déterminent univoquement leur fonction génératrice.\\
 									
 									
-		\retenir{Si deux séries de Fourier convergent (au sens $L^2$) vers une même fonction, alors, celles-ci sont égales}\ \\
+		\retenir{Si deux séries de Fourier convergent (au sens $L^2$) vers une même fonction, alors, celles-ci sont égales.}\ \\
 		\begin{proof}
 			\begin{equation}
 				\series c_k\phi_k = f\ \ \text{et}\ \ \series d_k\phi_k = f\ \ \Rightarrow \series (c_k-d_k)\phi_k = 0
@@ -1580,8 +1580,8 @@ En prenant la limite $k \rightarrow \infty$ on trouve la série $S(x) = \left\{\
 		\subsection{Fonction régularisée}
 		S'il existe une subdivision de $[a,b]\,|\,f$ est continue sur chaque subdivision et que sur chaque borne de cette subdivision, la limite à gauche et à droite existent, alors $f$ est continue par morceaux sur $[a,b]$. On peut alors la régulariser $$\tilde{f}=\left\{\begin{array}{l}
 		\frac{f(x^-)+f(x^+)}{2}\quad x\in ]a,b[\\
-		\frac{f(a^+)+f(b^-}{2}\quad x=a\text{ ou }x=b
-		\end{array}\right.$$ $\tilde{f}$ étant la fonction régularisée de $f$, les \textit{points réguliers} sont les points tels que $f=\tilde{f}$\\ On définit aussi un prolongement périodique de $\tilde{f}$ (période $b-a$) : $\tilde{f}_{pro}$. Si $\tilde{f}_{pro}$ est continue sur $[a,b]$ alors $\tilde{f}$ et $f$ sont continue par morceaux.
+		\frac{f(a^+)+f(b^-)}{2}\quad x=a\text{ ou }x=b
+		\end{array}\right.$$ $\tilde{f}$ étant la fonction régularisée de $f$, les \textit{points réguliers} sont les points tels que $f=\tilde{f}$\\ On définit aussi un prolongement périodique de $\tilde{f}$ (période $b-a$) : $\tilde{f}_{pro}$. Si $\tilde{f}_{pro}$ est continue sur $[a,b]$ alors $\tilde{f}$ et $f$ sont continues par morceaux.
 		\section{Convergence simple des séries classiques}
 		\subsection{Théorème de Dirichlet}
 		\theor{Si $f$ et $f'\in C_{morc}^0[-\pi,\pi]$, alors $$\frac{a_0(f)}{2}+\serie(a_k(f)\cos(kx)+b_k(f)\sin(kx))\overset{C.S.}{=}\frac{f(x^+)+f(x^-)}{2}$$ c-a-d que la \textit{série de Fourier de f converge vers la régularisée de f}}\ \\
